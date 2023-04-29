@@ -35,8 +35,8 @@ module fft_4
 
   reg [DATA_WIDTH - 1: 0] t1_r =  1;
   reg [DATA_WIDTH - 1: 0] t1_i =  0;
-  reg [DATA_WIDTH - 1: 0] t2_r = -1;
-  reg [DATA_WIDTH - 1: 0] t2_i =  0;
+  reg [DATA_WIDTH - 1: 0] t2_r =  0;
+  reg [DATA_WIDTH - 1: 0] t2_i = -1;
   
   butterfly #(.DATA_WIDTH(DATA_WIDTH)) b1(e1_r, e1_i, o1_r, o1_i, t1_r, t1_i, y1_r, y1_i, y3_r, y3_i);
   butterfly #(.DATA_WIDTH(DATA_WIDTH)) b2(e2_r, e2_i, o2_r, o2_i, t2_r, t2_i, y2_r, y2_i, y4_r, y4_i);

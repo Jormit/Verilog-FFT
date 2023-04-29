@@ -3,7 +3,7 @@ module fft_2_tb;
 
   reg [DATA_WIDTH - 1: 0] x1_r = 1;
   reg [DATA_WIDTH - 1: 0] x1_i = 0;
-  reg [DATA_WIDTH - 1: 0] x2_r = 2;
+  reg [DATA_WIDTH - 1: 0] x2_r = 3;
   reg [DATA_WIDTH - 1: 0] x2_i = 0;
 
   wire [DATA_WIDTH - 1: 0] y1_r;
